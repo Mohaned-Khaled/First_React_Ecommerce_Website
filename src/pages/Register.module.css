@@ -1,0 +1,59 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgb(255 255 255 / 0.5),
+      rgb(255 255 255 / 0.5)
+    ),
+    url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 20px;
+  width: 40%;
+  background-color: var(--white-color);
+}
+
+.wrapper .title {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.wrapper form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper form input {
+  flex: 1;
+  min-width: 40%;
+  margin: 20px 10px 0 0;
+  padding: 10px;
+  border: 1px solid var(--main-color);
+}
+
+.wrapper form span {
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+.wrapper form button {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  .wrapper form {
+    flex-direction: column;
+  }
+
+  .wrapper form input {
+    margin: 20px 0 0 0;
+  }
+}
